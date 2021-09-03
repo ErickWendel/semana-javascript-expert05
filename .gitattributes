@@ -1,3 +1,5 @@
 *.js linguist-detectable=true
 *.html linguist-detectable=false
 *.css linguist-detectable=false
+*.sh linguist-detectable=false
+*.pem linguist-detectable=false
