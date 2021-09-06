@@ -54,7 +54,7 @@ Marque esse projeto com uma estrela 🌟
 
 - Certificado SSL é inválido, o que fazer?
     - Esse erro acontece porque gerei um certificado atrelado ao usuário da minha máquina.
-    - Você pode clicar em prosseguir no browser e usar o certificado invalido que o projeto vai continuar funcionando, mas se quiser gerar o seu próprio, escrevi o passo a passo em [./certificate](./certificate)
+    - Você pode clicar em prosseguir no browser e usar o certificado invalido que o projeto vai continuar funcionando, mas se quiser gerar o seu próprio, escrevi o passo a passo em [./certificates](./certificates)
 
 - Rodei `npm test` mas nada acontece, o que fazer?
     - Verifique a versão do seu Node.js. Estamos usando na versão 16.8. Entre no [site do node.js](https://nodejs.org) e baixe a versão mais recente.
