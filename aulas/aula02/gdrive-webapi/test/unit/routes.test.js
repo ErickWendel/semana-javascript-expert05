@@ -47,14 +47,7 @@ describe('#Routes test suite', () => {
             expect(routes.io).toStrictEqual(ioObj)
         })
     })
-
-    describe('#Ru', () => {
-        test('test', () => {
-            const routes = new Routes()
-            expect(routes.downloadsFolder).toStrictEqual('/Users/erickwendel/Downloads/projetos/pocs/gdrive-clone/recorded/aulas/aula02/gdrive-webapi/downloads')
-        })
-    })
- 
+  
     describe('#handler', () => {
 
 
