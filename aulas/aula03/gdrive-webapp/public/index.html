@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Expert Drive | Semana JS Expert</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="nav-extended white">
+          <div class="nav-wrapper white">
+            <ul>
+              <li><a href="#!" class="title grey-text text-darken-1">JS Expert Drive</a></li>
+            </ul>
+            <div class="search-wrapper">
+              <i class="material-icons">search</i>
+              <input type="search" name="Search" placeholder="Search Drive" />
+            </div>
+            <ul class="right">
+              <li><a href="#!"><i class="material-icons grey-text text-darken-1">apps</i></a></li>
+              <li><a href="#!"><i class="material-icons grey-text text-darken-1">notifications</i></a></li>
+              <li><a href="#!"><img src="https://pbs.twimg.com/profile_images/1192804356204224512/8v6Xx019_400x400.jpg" class="circle"></a></li>
+            </ul>
+          </div>
+          <div class="nav-wrapper nav-2">
+            <ul>
+              <li><button class="waves-effect waves-light btn btn-flat white-text" id="newFileBtn" >New</button>
+                <input type="file" id="fileElem" multiple accept="image/video/audio*">
+
+              </li>
+            </ul>
+            <ul class="right">
+              <li><a href="#!"><i class="material-icons grey-text text-darken-1">view_list</i></a></li>
+              <li><a href="#!"><i class="material-icons grey-text text-darken-1">info</i></a></li>
+              <li><a href="#!"><i class="material-icons grey-text text-darken-1">settings</i></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <ul class="side-nav fixed floating transparent z-depth-0">
+        <li class="active"><a href="#"><i class="material-icons blue-text text-darken-1">dashboard</i>My Drive</a></li>
+        <li><a href="#"><i class="material-icons">devices</i>Computers</a></li>
+        <li><a href="#"><i class="material-icons">people</i>Shared with me</a></li>
+        <li><a href="#"><i class="material-icons">access_time</i>Recent</a></li>
+        <li><a href="#"><i class="material-icons">camera</i>Google Photos</a></li>
+        <li><a href="#"><i class="material-icons">star</i>Starred</a></li>
+        <li><a href="#"><i class="material-icons">delete</i>Trash</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#"><i class="material-icons">cloud</i>Backups</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#"><i class="material-icons">storage</i>Upgrade storage</a></li>
+      </ul>
+      
+      <div class="main">
+        <div class="container-fluid" id="dropArea">
+
+          <table class="highlight bordered">
+            <thead>
+              <tr>
+                  <th>
+                    Name
+                  </th>
+                  <th>Owner</th>
+                  <th>Last Modified</th>
+                  <th>File Size</th>
+              </tr>
+            </thead>
+  
+            <tbody id="tbody">
+            </tbody>
+          </table> 
+        </div>
+      </div>
+      <footer> 
+          <!-- Modal Structure -->
+          <div class="row">
+            <div id="progressModal" class="modal bottom-sheet col s10 offset-s10">
+              <div class="modal-content">
+                <div class="row">
+                  <div class="col s2">
+                    <progress id="progressBar" max=100 value=0></progress>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s2">
+                    <h4 id="output" class="center">Uploading... 0%</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.min.js" integrity="sha512-fB746S+jyTdN2LSWbYSGP2amFYId226wpOeV4ApumcDpIttPxvk1ZPOgnwqwQziRAtZkiFJVx9F64GLAtoIlCQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          
+          <script src="./app.js" type="module"></script>
+      </footer>
+      </body>
+</html>

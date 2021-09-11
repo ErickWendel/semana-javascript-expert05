@@ -1,0 +1,17 @@
+{
+  "name": "@erickwendel/gdrive-webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npx http-server public",
+    "dev": "npx http-server public --cert certificates/cert.pem --key certificates/key.pem --ssl -o"
+  },
+  "keywords": [],
+  "author": "erickwendel",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
