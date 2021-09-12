@@ -46,7 +46,7 @@ export default class AppController {
             .map(({ percent }) => percent ?? 0)
             .reduce((total, current) => total + current, 0)
 
-        this.viewManager.updateStatus(total)
+        this.viewManager.updateStatus(total % 100)
     }
 
     async onFileChange(files) {
