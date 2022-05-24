@@ -1,8 +1,8 @@
-# Google Drive Clone - Semana JS Expert 5.0
+# Google Drive Clone - JS Expert Week 5.0
 
-Seja bem vindo(a) à quinta Semana Javascript Expert. Este é o código inicial para iniciar nossa jornada.
+Welcome to the fifth Javascript Expert Week. This is the starting code to start our journey.
 
-Marque esse projeto com uma estrela 🌟
+Tag this project with a star 🌟
 
 ## Preview
 
@@ -12,49 +12,43 @@ Marque esse projeto com uma estrela 🌟
 ## Checklist Features
 
 - Web API
-    - [] Deve listar arquivos baixados
-    - [] Deve receber stream de arquivos e salvar em disco 
-    - [] Deve notificar sobre progresso de armazenamento de arquivos em disco 
-    - [] Deve permitir upload de arquivos em formato image, video ou audio
-    - [] Deve atingir 100% de cobertura de código em testes
+    - [] It should list downloaded files
+    - [] It must stream files and save them in disk
+    - [] It should notify about progress of storing files to disk
+    - [] It must allow uploading of files in image, video or audio format
+    - [] It must reach 100% code coverage in tests
 
-- Web App 
-    - [] Deve listar arquivos baixados
-    - [] Deve permitir fazer upload de arquivos de qualquer tamanho
-    - [] Deve ter função de upload via botão
-    - [] Deve exibir progresso de upload 
-    - [] Deve ter função de upload via drag and drop
+- Web App
+    - [] Should list downloaded files
+    - [] Should allow uploading of files of any size
+    - [] Must have upload function via button
+    - [] Should display upload progress
+    - [] Must have drag and drop upload function
 
 
+## Challenges for you to extend this project
 
-## Desafios para alunos pós projeto
+1. *Backend*: Save the file to AWS or any storage service
+     - Our project today stores files on disk. the challenge is you via Stream, uploading to some cloud service
+     - As a plus, keep 100% code coverage, that is, create tests for your new feature
+2. *Frontend*: Add frontend tests and achieve 100% code coverage
+    - You learned how to test in the backend. Use the same process to create frontend unit tests with Jest
+    - If you have any doubts, go to [example](https://github.com/ErickWendel/tdd-frontend-example) and leave a star!
+3. *Infrastructure*: Publish application with your custom SSL in virtual machine
+    - You learned how to generate local SSL, the challenge is for you to create a certificate (it can be with *Let's Encrypt*) and add it to your application
 
-1. *Backend*: Salvar o arquivo na AWS ou qualquer serviço de storage
-     - Nosso projeto hoje armazena arquivos em disco. o desafio é você via Stream, fazer upload para algum serviço na nuvem
-     - Como plus, manter 100% de code coverage, ou seja, crie testes para sua nova feature
-2. *Frontend*: Adicionar testes no frontend e alcançar 100% de code coverage
-    - Você aprendeu como fazer testes no backend. Usar o mesmo processo para criar testes unitários no frontend com Jest 
-    - Caso tenha duvidas, acesse o [exemplo](https://github.com/ErickWendel/tdd-frontend-example) e deixe uma estrela!
-3. *Infraestrutura*: Publicar aplicação com seu SSL customizado em máquina virtual
-    - Você aprendeu a gerar SSL local, o desafio é você criar um certificado (pode ser com o *Let's Encrypt*) e adicionar na sua aplicação
+## Layout Credits <3
 
-### Considerações
-- Tire suas dúvidas sobre os desafios em nossa comunidade, o objetivo é você aprender de forma divertida. Surgiu dúvidas? Pergunte por lá!
+- The Layout was adapted from the project by the Brazilian [Leonardo Santo](https://github.com/leoespsanto) available on [codepen](https://codepen.io/leoespsanto/pen/KZMMKG).
 
-- Ao completar qualquer um dos desafios, envie no canal **#desafios** da comunidade no **Discord**
+## FAQ
+- `NODE_OPTIONS` is not a system recognized command, what to do?
+    - If you are on Windows, the way to create environment variables is different. You must use the word `set` before the command.
+    - Ex: ` "test": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --runInBand",`
 
-## Créditos ao Layout <3
+- SSL certificate is invalid, what to do?
+    - This error happens because I generated a certificate linked to the user of my machine.
+    - You can click on proceed in the browser and use the invalid certificate and the project will continue working, but if you want to generate your own, I wrote the step by step in [./certificates](./certificates)
 
-- O Layout foi adaptado a partir do projeto do brasileiro [Leonardo Santo](https://github.com/leoespsanto) disponibilizado no [codepen](https://codepen.io/leoespsanto/pen/KZMMKG). 
-
-## FAQ 
-- `NODE_OPTIONS` não é um comando reconhecido pelo sistema, o que fazer?
-    - Se você estiver no Windows, a forma de criar variáveis de ambiente é diferente. Você deve usar a palavra `set` antes do comando. 
-    - Ex: `    "test": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --runInBand",`
-
-- Certificado SSL é inválido, o que fazer?
-    - Esse erro acontece porque gerei um certificado atrelado ao usuário da minha máquina.
-    - Você pode clicar em prosseguir no browser e usar o certificado invalido que o projeto vai continuar funcionando, mas se quiser gerar o seu próprio, escrevi o passo a passo em [./certificates](./certificates)
-
-- Rodei `npm test` mas nada acontece, o que fazer?
-    - Verifique a versão do seu Node.js. Estamos usando na versão 16.8. Entre no [site do node.js](https://nodejs.org) e baixe a versão mais recente.
+- I ran `npm test` but nothing happens, what to do?
+    - Check your Node.js version. We are using version 16.8. Go to [node.js website](https://nodejs.org) and download the latest version.
