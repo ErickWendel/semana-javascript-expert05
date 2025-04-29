@@ -4,6 +4,8 @@ Welcome to the fifth Javascript Expert Week. This is the starting code to start 
 
 Tag this project with a star 🌟
 
+[<img src="https://devin.ai/assets/deepwiki-badge.png" alt="Ask DeepWiki.com" height="20"/>](https://deepwiki.com/ErickWendel/semana-javascript-expert05)
+
 ## Preview
 
 ![](./resources/demo.gif)
