@@ -46,13 +46,13 @@ export default class AppController {
             .map(({ percent }) => percent ?? 0)
             .reduce((total, current) => total + current, 0)
 
-        this.viewManager.updateStatus(total)
+        this.viewManager.updateStatus(total % 100)
     }
 
     async onFileChange(files) {
         // aqui tem um bug conhecido, se no meio do upload
         // voce fazer outro upload, ele vai fechar o modal e iniciar do zero
-        this.uploadingFiles.clear()
+        // this.uploadingFiles.clear()
 
         this.viewManager.openModal()
         this.viewManager.updateStatus(0)
